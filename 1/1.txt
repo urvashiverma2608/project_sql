@@ -1,0 +1,20 @@
+<html>
+<title> Hugh Owen Library</title>
+<head>Home page</head>
+<body>
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600" style="vertical-align:top">
+<style>
+a {
+  color: blue;
+  text-align: center;
+}
+</style>
+  <br>
+<a href ="2.txt">Login</a>
+    <br>
+      
+<a href ="3.txt">Sign up</a>
+      <br>
+<a href ="4.txt">Help</a>
+</body>
+</html>

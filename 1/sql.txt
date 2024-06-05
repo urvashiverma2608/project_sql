@@ -1,0 +1,14 @@
+create table students(id integer primary key not null unique, name varchar(20), joined date, book varchar(20));
+create table librarian(id integer unique not null, name varchar(20), joined date);
+create table books(id integer not null unique, name varchar(20), available bool, borrowed_by integer, foreign key (borrowed_by) references students(id));
+insert into students values('219003531', 'Urvashi', '24-09-21', 'Crime and punishment');
+insert into students values('219003532', 'Niharika', '24-09-21', 'Pride and prejudice');
+insert into students values('219003533', 'Harsh', '24-09-21', 'Autobiography of a yogi');
+insert into students values('219003534', 'Qiuyu', '24-09-21', 'The last song');
+insert into students values('219003535', 'Shuchita', '24-09-21', 'Journey of souls');
+insert into librarian values('1201', 'Faye', '16-07-19');
+insert into books values('1', 'Crime and punishment', 'No', '219003531');
+insert into books values('2', 'Pride and prejudice', 'No', '219003532');
+insert into books values('3', 'Autobiography of a yogi', 'No', '219003533');
+insert into books values('4', 'The last song', 'No', '219003534');
+insert into books values('5', 'Journey of souls', 'No', '219003535');
